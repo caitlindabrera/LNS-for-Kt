@@ -55,3 +55,7 @@ If you'd like to use in any of the above methods the following import commands
   Require Import ExtrHaskellNatInt.
 
 then uncomment them in cut_extraction_theorem.v or cut_extraction_example.v, then follow the above methods with the exception of using the "_extrlib" versions of the Main files for step 2.
+
+
+
+The ../general directory contains .v files not needed for cut-elimination.
