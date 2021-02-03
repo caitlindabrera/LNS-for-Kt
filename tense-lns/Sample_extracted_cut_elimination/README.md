@@ -1,0 +1,1 @@
+This directory contains Haskell files that were extracted from cut_extraction_example.v, plus two hand-coded Main files. To use, load Main_example.hs and run "cut_example3".
