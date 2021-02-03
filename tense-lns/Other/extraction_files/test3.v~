@@ -1,0 +1,11 @@
+Add LoadPath "../../general".
+Add LoadPath "..".
+(* Require Import cut. *)
+Require Import Extraction.
+
+Extraction Language Haskell.
+
+Require Import genT gen gen_seq.
+Require Import ddT.
+Require Import List_lemmasT.
+Require Import gen_tacs lntT lntkt_exchT.

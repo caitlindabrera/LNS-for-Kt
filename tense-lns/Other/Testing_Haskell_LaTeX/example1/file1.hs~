@@ -1,0 +1,5 @@
+
+
+main = writeFile "/tmp/foo.txt" aaa
+
+aaa = "BBB" ++ "CCC"

@@ -1,0 +1,5 @@
+Deleted "Polymorphic" in general.
+Extracted Cut.
+Copied .hs files here.
+Added Main file with pretty printing and examples.
+Load Main, call examples in Main.

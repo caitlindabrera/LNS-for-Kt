@@ -1,0 +1,24 @@
+If I want to...
+
+...move to caitlin_dev, given that I've been working on paper-LNSKt and don't want to commit changes to that yet.
+
+               # ... hack hack hack ...
+               $ git checkout -b my_wip
+               $ git commit -am "WIP"
+               $ git checkout caitlin_dev
+               $ do whatever I want to do there
+               $ git commit -am "Fix in a hurry"
+               $ git checkout my_wip
+               $ git reset --soft HEAD^
+	       $ git checkout caitlin_dev
+               # ... continue hacking ...
+	       $ git commit -am "Finished the work that was WIP"
+	       $ git branch -d my_wip
+
+  (instructions from git stash)
+
+
+...stash untracked files before checking out a branch.
+
+	       $ git stash -u
+

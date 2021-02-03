@@ -1,0 +1,6 @@
+Deleted "Polymorphic" in general.
+Extracted Cut.
+Copied .hs files here.
+Added Main file with pretty printing and examples.
+Load Main, call examples in Main.
+This probably will get errors because the example might not be compatible with the extraction. No stress. Just work on the example, or alternatively go to example6.

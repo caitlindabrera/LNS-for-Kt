@@ -1,0 +1,204 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bussproofs}
+\usepackage{proof}
+\usepackage[all]{xy}
+\usepackage{adjustbox}
+\usepackage{etoolbox}
+\usepackage{stackrel}
+\usepackage{stmaryrd}
+\usepackage{xcolor}
+
+
+\newcommand{\myred}[1]{{\color{red} #1}}
+\newcommand{\qed}{\hfill\ensuremath{\dashv}}
+\newcommand{\B}{\mathsf{B}}
+\newcommand{\cmp}[1]{|#1|}
+\newcommand{\ConL}{\mathsf{C}_L}
+\newcommand{\ConR}{\mathsf{C}_R}
+\newcommand{\crit}[1]{\mathsf{crit}(#1)}
+\newcommand{\D}{\mathsf{D}}
+\newcommand{\dpth}[1]{\mathsf{dp}(#1)}
+\newcommand{\entails}{\vdash}
+\newcommand{\EW}{\mathsf{EW}}
+\newcommand{\K}{\mathsf{K}}
+\newcommand{\KB}{\mathsf{KB}}
+\newcommand{\Kt}{\mathsf{Kt}}
+\newcommand{\HKt}{\mathsf{HKt}}
+\newcommand{\Land}{\bigwedge}
+\newcommand{\LNS}{\mathsf{LNS}}
+\newcommand{\Lor}{\bigvee}
+\newcommand{\mrg}{\oplus}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\name}[1]{\mathop{nm}(#1)}
+\newcommand{\nforces}{\not\forces}
+\newcommand{\sa}{\Rightarrow}
+\newcommand{\SL}{\mathsf{SL}}
+\newcommand{\SR}{\mathsf{SR}}
+\newcommand{\T}{\mathsf{T}}
+\newcommand{\transl}[1][]{\ifstrempty{#1}{ \tau }{
+		\tau \left( #1 \right)}} % Valuation / truth set
+\newcommand{\Val}[1][]{\ifstrempty{#1}{ \llbracket \ldotp \rrbracket  }{
+		\left\llbracket #1 \right\rrbracket}} % Valuation / truth set
+\newcommand{\W}{\mathsf{W}}
+
+\newcommand{\qbx}{[?]}
+\newcommand{\wbx}{\Box}
+\newcommand{\wdi}{\Diamond}
+\newcommand{\bbx}{\blacksquare}
+\newcommand{\bdi}{\blacklozenge}
+\newcommand{\fwd}{\nearrow}
+\newcommand\bwd{\swarrow}
+\newcommand\upd{\updownarrow}
+\newcommand{\bbar}{\|}
+\newcommand{\stt}[1][]{\stackrel{#1}{\Rightarrow}}
+\newcommand{\seq}[2]{#1 \stt #2}
+\newcommand{\toosmall}{\texttt{toosmall}}
+\newcommand{\seqtoosmall}[2]{#1 \stt[\toosmall] #2}
+
+\newcommand{\sat}{\texttt{sat}}
+\newcommand{\unsat}{\texttt{unsat}}
+
+\newcommand{\atm}{\texttt{Atm}}
+\newcommand{\forces}{\Vdash}
+\newcommand{\limp}{\rightarrow}
+
+\newcommand{\mcalG}{\mathcal{G}}
+\newcommand{\mcalH}{\mathcal{H}}
+
+\newcommand{\bdirl}{($\bdi$)}
+\newcommand{\wdirl}{($\wdi$)}
+
+\newcommand{\idrl}{(id)}
+
+
+\title{Cut-elimination output}\date{}
+
+\begin{document}
+	
+	\maketitle{}
+
+
+\begin{figure}[h]
+	\[
+	\infer[\wbx_R^1]{\mathcal{G} \upd \Gamma \sa \Delta \bwd \Sigma
+		\sa \Pi, \wbx A
+	}
+	{\mathcal{G} \upd \Gamma \sa \Delta, A \bwd \Sigma \sa \Pi, \wbx A
+		&
+		\mathcal{G} \upd \Gamma \sa \Delta \bwd \Sigma\sa \Pi, \wbx A \fwd
+		\epsilon\sa A
+	}
+	\]
+	\[
+	\infer[\bbx_R^1]{\mathcal{G} \upd \Gamma \sa \Delta \fwd \Sigma
+		\sa \Pi, \bbx A
+	}
+	{\mathcal{G} \upd \Gamma \sa \Delta, A \fwd \Sigma \sa \Pi, \bbx A
+		&
+		\mathcal{G} \upd \Gamma \sa \Delta \fwd \Sigma\sa \Pi, \bbx A \bwd
+		\epsilon\sa A
+	}
+	\]
+	\[
+	\infer[\wbx_R^2]{\mathcal{G} \fwd \Gamma \sa \Delta, \wbx A
+	}
+	{\mathcal{G} \fwd \Gamma \sa \Delta, \wbx A \fwd \epsilon\sa A
+	}
+	\qquad
+	\infer[\bbx_R^2]{\mathcal{G} \bwd \Gamma \sa \Delta, \bbx A
+	}
+	{\mathcal{G} \bwd \Gamma \sa \Delta, \bbx A \bwd \epsilon\sa A
+	}
+	\]
+	\[
+	\infer[\wbx_L^1]{\mathcal{G} \upd \Gamma, \wbx A \sa \Delta \fwd
+		\Sigma \sa \Pi
+	}
+	{\mathcal{G} \upd \Gamma, \wbx A \sa \Delta \fwd
+		\Sigma, A \sa \Pi
+	}
+	\quad
+	\infer[\bbx_L^1]{\mathcal{G} \upd \Gamma, \bbx A \sa \Delta \bwd
+		\Sigma \sa \Pi
+	}
+	{\mathcal{G} \upd \Gamma, \bbx A \sa \Delta \bwd
+		\Sigma, A \sa \Pi
+	}
+	\]
+	\[
+	\infer[\wbx_L^2]{\mathcal{G} \upd \Gamma \sa \Delta \bwd
+		\Sigma, \wbx A \sa \Pi
+	}
+	{\mathcal{G} \upd \Gamma, A \sa \Delta 
+	}
+	\quad
+	\infer[\bbx_L^2]{\mathcal{G} \upd \Gamma \sa \Delta \fwd
+		\Sigma, \bbx A \sa \Pi
+	}
+	{\mathcal{G} \upd \Gamma, A \sa \Delta 
+	}
+	\]
+	\[
+	\infer[\idrl]{\mathcal{G} \upd \Gamma, p \sa p, \Delta
+	}
+	{
+	}
+	\quad
+	\infer[\bot_L]{\mathcal{G} \upd \Gamma, \bot \sa \Delta
+	}
+	{
+	}
+	\quad
+	\infer[\EW]{\mathcal{G} \upd \Gamma \sa \Delta
+	}
+	{\mathcal{G}
+	}
+	\]
+	\[
+	\infer[\to_R]{\mathcal{G} \upd \Gamma \sa \Delta, A \to B
+	}
+	{\mathcal{G} \upd \Gamma, A \sa \Delta, A \to B, B
+	}
+	\qquad
+	\infer[\to_L]{\mathcal{G} \upd \Gamma, A \to B \sa \Delta
+	}
+	{\mathcal{G} \upd \Gamma, A \to B, B \sa \Delta
+		&
+		\mathcal{G} \upd \Gamma, A \to B \sa \Delta, A
+	}
+	\]
+\end{figure}
+
+
+\begin{figure}[h]
+	\[
+	\AxiomC{~}
+	\RightLabel{id}
+	\UnaryInfC{
+		$\seq{r, \lnot r}{r, \wbx p, \wbx q, \bbx \lnot\wbx\lnot r}$
+	}
+	\RightLabel{$\lnot_L$}
+	\UnaryInfC{
+		$\seq{r, \lnot r}{\wbx p, \wbx q, \bbx \lnot\wbx\lnot r}$
+	}
+	\RightLabel{$\wbx_L^2$}
+	\UnaryInfC{
+		$\seq{r}{\wbx p, \wbx q, \bbx \lnot\wbx\lnot r} \bwd \seq{\wbx \lnot
+			r}{\lnot \wbx \lnot r}$
+	}
+	\RightLabel{$\lnot_R$}
+	\UnaryInfC{
+		$\seq{r}{\wbx p, \wbx q, \bbx \lnot\wbx\lnot r} \bwd \seq{\epsilon}{\lnot\wbx\lnot r}$
+	}
+	\RightLabel{$\bbx_R^2$}
+	\UnaryInfC{$\seq{r}{\wbx p, \wbx q, \bbx \lnot\wbx\lnot r}$}
+	\DisplayProof
+	\]
+\end{figure}
+
+
+
+\end{document}

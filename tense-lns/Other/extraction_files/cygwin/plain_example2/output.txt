@@ -1,0 +1,1672 @@
+GHCi, version 8.4.3: http://www.haskell.org/ghc/  :? for help
+Prelude> :cd C:\Users\caity\my_git\tense-logic-in-Coq\tense-lns\extraction_files\cygwin\plain_example2
+Prelude> :load "Main.hs"
+[ 1 of 51] Compiling Datatypes        ( Datatypes.hs, interpreted )
+[ 2 of 51] Compiling CRelationClasses ( CRelationClasses.hs, interpreted )
+[ 3 of 51] Compiling EqdepFacts       ( EqdepFacts.hs, interpreted )
+[ 4 of 51] Compiling List             ( List.hs, interpreted )
+[ 5 of 51] Compiling Logic            ( Logic.hs, interpreted )
+[ 6 of 51] Compiling Gen_tacs         ( Gen_tacs.hs, interpreted )
+[ 7 of 51] Compiling LntT             ( LntT.hs, interpreted )
+[ 8 of 51] Compiling Gen              ( Gen.hs, interpreted )
+[ 9 of 51] Compiling CMorphisms       ( CMorphisms.hs, interpreted )
+[10 of 51] Compiling Nat              ( Nat.hs, interpreted )
+[11 of 51] Compiling PeanoNat         ( PeanoNat.hs, interpreted )
+[12 of 51] Compiling Size             ( Size.hs, interpreted )
+[13 of 51] Compiling Specif           ( Specif.hs, interpreted )
+[14 of 51] Compiling GenT             ( GenT.hs, interpreted )
+[15 of 51] Compiling List_lemmasT     ( List_lemmasT.hs, interpreted )
+[16 of 51] Compiling InclT            ( InclT.hs, interpreted )
+[17 of 51] Compiling Gen_seq          ( Gen_seq.hs, interpreted )
+[18 of 51] Compiling DdT              ( DdT.hs, interpreted )
+[19 of 51] Compiling Dd_fc            ( Dd_fc.hs, interpreted )
+[20 of 51] Compiling ContractedT      ( ContractedT.hs, interpreted )
+[21 of 51] Compiling Structural_equivalence ( Structural_equivalence.hs, interpreted )
+[22 of 51] Compiling SwappedT         ( SwappedT.hs, interpreted )
+[23 of 51] Compiling LntacsT          ( LntacsT.hs, interpreted )
+[24 of 51] Compiling LntrsT           ( LntrsT.hs, interpreted )
+[25 of 51] Compiling LntlsT           ( LntlsT.hs, interpreted )
+[26 of 51] Compiling LntbRT           ( LntbRT.hs, interpreted )
+[27 of 51] Compiling Lntb2LT          ( Lntb2LT.hs, interpreted )
+[28 of 51] Compiling Lntb1LT          ( Lntb1LT.hs, interpreted )
+[29 of 51] Compiling Lntkt_exchT      ( Lntkt_exchT.hs, interpreted )
+[30 of 51] Compiling Principal        ( Principal.hs, interpreted )
+[31 of 51] Compiling Lnt_gen_initT    ( Lnt_gen_initT.hs, interpreted )
+[32 of 51] Compiling Lnt_contractionT ( Lnt_contractionT.hs, interpreted )
+[33 of 51] Compiling WeakenedT        ( WeakenedT.hs, interpreted )
+[34 of 51] Compiling Merge            ( Merge.hs, interpreted )
+[35 of 51] Compiling Lnt_contraction_mrT ( Lnt_contraction_mrT.hs, interpreted )
+[36 of 51] Compiling Lemma_Sixteen_setup ( Lemma_Sixteen_setup.hs, interpreted )
+[37 of 51] Compiling Lnt_weakeningT   ( Lnt_weakeningT.hs, interpreted )
+[38 of 51] Compiling Lemma_Sixteen_SR_wb_fwd ( Lemma_Sixteen_SR_wb_fwd.hs, interpreted )
+[39 of 51] Compiling Lemma_Sixteen_SR_wb_bac ( Lemma_Sixteen_SR_wb_bac.hs, interpreted )
+[40 of 51] Compiling Lemma_Sixteen_SR_wb ( Lemma_Sixteen_SR_wb.hs, interpreted )
+[41 of 51] Compiling Lemma_Sixteen_SR_p ( Lemma_Sixteen_SR_p.hs, interpreted )
+[42 of 51] Compiling Lemma_Sixteen_SR_bb_fwd ( Lemma_Sixteen_SR_bb_fwd.hs, interpreted )
+[43 of 51] Compiling Lemma_Sixteen_SR_bb_bac ( Lemma_Sixteen_SR_bb_bac.hs, interpreted )
+[44 of 51] Compiling Lemma_Sixteen_SR_bb ( Lemma_Sixteen_SR_bb.hs, interpreted )
+[45 of 51] Compiling Lemma_Sixteen_SL ( Lemma_Sixteen_SL.hs, interpreted )
+[46 of 51] Compiling Wf               ( Wf.hs, interpreted )
+[47 of 51] Compiling Ind_lex          ( Ind_lex.hs, interpreted )
+[48 of 51] Compiling Lemma_Sixteen    ( Lemma_Sixteen.hs, interpreted )
+
+Lemma_Sixteen.hs:217:3: error:
+    • Couldn't match type ‘GHC.Base.Any’
+                     with ‘p0
+                           -> t0
+                           -> t1
+                           -> t2
+                           -> t3
+                           -> t4
+                           -> t5
+                           -> t6
+                           -> t7
+                           -> t8
+                           -> t9
+                           -> t10
+                           -> t11
+                           -> t12
+                           -> t13
+                           -> p1
+                           -> p2
+                           -> p3
+                           -> t14
+                           -> t15
+                           -> p4
+                           -> t16’
+      Expected type: Datatypes.Coq_prod
+                       (Datatypes.Coq_prod
+                          (Datatypes.Coq_prod
+                             Lemma_Sixteen_setup.SR_wb Lemma_Sixteen_setup.SR_bb)
+                          Lemma_Sixteen_setup.SR_p)
+                       Lemma_Sixteen_setup.SL
+        Actual type: Datatypes.Coq_prod
+                       (Datatypes.Coq_prod
+                          (Datatypes.Coq_prod
+                             (p0
+                              -> t0
+                              -> t1
+                              -> t2
+                              -> t3
+                              -> t4
+                              -> t5
+                              -> t6
+                              -> t7
+                              -> t8
+                              -> t9
+                              -> t10
+                              -> t11
+                              -> t12
+                              -> t13
+                              -> p1
+                              -> p2
+                              -> p3
+                              -> t14
+                              -> t15
+                              -> p4
+                              -> t16)
+                             (p0
+                              -> t0
+                              -> t1
+                              -> t2
+                              -> t3
+                              -> t4
+                              -> t5
+                              -> t6
+                              -> t7
+                              -> t8
+                              -> t9
+                              -> t10
+                              -> t11
+                              -> t12
+                              -> t13
+                              -> p1
+                              -> p2
+                              -> p3
+                              -> t14
+                              -> t15
+                              -> p4
+                              -> t16))
+                          (p0
+                           -> t0
+                           -> t1
+                           -> t2
+                           -> t3
+                           -> t4
+                           -> t5
+                           -> t6
+                           -> t7
+                           -> t8
+                           -> t9
+                           -> t10
+                           -> t11
+                           -> t12
+                           -> t13
+                           -> p1
+                           -> p2
+                           -> p3
+                           -> t14
+                           -> t15
+                           -> p4
+                           -> t16))
+                       (p0
+                        -> t0
+                        -> t1
+                        -> t2
+                        -> t3
+                        -> t4
+                        -> t5
+                        -> t6
+                        -> t7
+                        -> t8
+                        -> t9
+                        -> t10
+                        -> t11
+                        -> t12
+                        -> t13
+                        -> p1
+                        -> p2
+                        -> p3
+                        -> t14
+                        -> t15
+                        -> p4
+                        -> t16)
+      The type variables ‘p0’, ‘t0’, ‘t1’, ‘t2’, ‘t3’, ‘t4’, ‘t5’, ‘t6’,
+                         ‘t7’, ‘t8’, ‘t9’, ‘t10’, ‘t11’, ‘t12’, ‘t13’, ‘p1’, ‘p2’, ‘p3’,
+                         ‘t14’, ‘t15’, ‘p4’, ‘t16’ are ambiguous
+    • In the expression:
+        Ind_lex.wf_le_lex_nat_induction
+          (\ nm0 x
+             -> case nm0 of {
+                  Datatypes.Coq_pair n m
+                    -> case n of
+                         Datatypes.O -> unsafeCoerce coq_Lemma_Sixteen_base_case m
+                         Datatypes.S n0 -> ... })
+          nm
+      In an equation for ‘coq_Lemma_Sixteen’:
+          coq_Lemma_Sixteen nm
+            = Ind_lex.wf_le_lex_nat_induction
+                (\ nm0 x
+                   -> case nm0 of {
+                        Datatypes.Coq_pair n m
+                          -> case n of
+                               Datatypes.O -> ...
+                               Datatypes.S n0 -> ... })
+                nm
+    |
+217 |   Ind_lex.wf_le_lex_nat_induction (\nm0 x ->     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Lemma_Sixteen.hs:225:60: error:
+    • Couldn't match type ‘GHC.Base.Any’
+                     with ‘p0
+                           -> t0
+                           -> t1
+                           -> t2
+                           -> t3
+                           -> t4
+                           -> t5
+                           -> t6
+
+                           -> t7
+                           -> t8
+                           -> t9
+                           -> t10
+                           -> t11
+                           -> t12
+                           -> t13
+                           -> p1
+                           -> p2
+                           -> p3
+                           -> t14
+                           -> t15
+                           -> p4
+                           -> t16’
+      Expected type: Datatypes.Coq_prod
+                       Datatypes.Coq_nat Datatypes.Coq_nat
+                     -> ()
+                     -> Datatypes.Coq_prod
+                          (Datatypes.Coq_prod
+                             (Datatypes.Coq_prod
+                                Lemma_Sixteen_setup.SR_wb Lemma_Sixteen_setup.SR_bb)
+                             Lemma_Sixteen_setup.SR_p)
+
+                          Lemma_Sixteen_setup.SL
+        Actual type: Datatypes.Coq_prod
+                       Datatypes.Coq_nat Datatypes.Coq_nat
+                     -> ()
+                     -> Datatypes.Coq_prod
+                          (Datatypes.Coq_prod
+                             (Datatypes.Coq_prod
+                                (p0
+                                 -> t0
+                                 -> t1
+                                 -> t2
+                                 -> t3
+                                 -> t4
+                                 -> t5
+                                 -> t6
+                                 -> t7
+                                 -> t8
+                                 -> t9
+                                 -> t10
+                                 -> t11
+                                 -> t12
+                                 -> t13
+                                 -> p1
+                                 -> p2
+                                 -> p3
+                                 -> t14
+                                 -> t15
+                                 -> p4
+                                 -> t16)
+                                (p0
+                                 -> t0
+                                 -> t1
+                                 -> t2
+                                 -> t3
+                                 -> t4
+                                 -> t5
+                                 -> t6
+                                 -> t7
+                                 -> t8
+                                 -> t9
+                                 -> t10
+                                 -> t11
+                                 -> t12
+                                 -> t13
+                                 -> p1
+                                 -> p2
+                                 -> p3
+                                 -> t14
+                                 -> t15
+                                 -> p4
+
+                                 -> t16))
+                             (p0
+                              -> t0
+                              -> t1
+                              -> t2
+                              -> t3
+                              -> t4
+                              -> t5
+                              -> t6
+                              -> t7
+                              -> t8
+                              -> t9
+                              -> t10
+                              -> t11
+                              -> t12
+                              -> t13
+                              -> p1
+                              -> p2
+                              -> p3
+                              -> t14
+                              -> t15
+                              -> p4
+                              -> t16))
+                          (p0
+                           -> t0
+                           -> t1
+                           -> t2
+                           -> t3
+                           -> t4
+                           -> t5
+                           -> t6
+                           -> t7
+                           -> t8
+                           -> t9
+                           -> t10
+                           -> t11
+                           -> t12
+                           -> t13
+                           -> p1
+
+                           -> p2
+                           -> p3
+                           -> t14
+                           -> t15
+                           -> p4
+                           -> t16)
+      The type variables ‘p0’, ‘t0’, ‘t1’, ‘t2’, ‘t3’, ‘t4’, ‘t5’, ‘t6’,
+                         ‘t7’, ‘t8’, ‘t9’, ‘t10’, ‘t11’, ‘t12’, ‘t13’, ‘p1’, ‘p2’, ‘p3’,
+                         ‘t14’, ‘t15’, ‘p4’, ‘t16’ are ambiguous
+    • In the third argument of ‘Lemma_Sixteen_SR_wb.coq_Lemma_Sixteen_SR_wb’, namely
+        ‘x’
+      In the expression:
+        Lemma_Sixteen_SR_wb.coq_Lemma_Sixteen_SR_wb
+          n0
+          m
+          x
+          x0
+          x1
+          x2
+          x3
+          x4
+          x5
+          x6
+          x7
+
+          x8
+          x9
+          x10
+          x11
+          x12
+          x13
+          x14
+          x15
+          x16
+          x17
+      In the expression:
+        \ x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15 x16 x17
+          -> Lemma_Sixteen_SR_wb.coq_Lemma_Sixteen_SR_wb
+               n0
+               m
+               x
+               x0
+               x1
+               x2
+               x3
+               x4
+               x5
+               x6
+               x7
+
+               x8
+               x9
+               x10
+               x11
+               x12
+               x13
+               x14
+               x15
+               x16
+               x17
+    • Relevant bindings include
+        x :: Datatypes.Coq_prod Datatypes.Coq_nat Datatypes.Coq_nat
+             -> ()
+             -> Datatypes.Coq_prod
+                  (Datatypes.Coq_prod
+                     (Datatypes.Coq_prod
+                        (p0
+                         -> t0
+                         -> t1
+                         -> t2
+                         -> t3
+                         -> t4
+                         -> t5
+                         -> t6
+                         -> t7
+                         -> t8
+                         -> t9
+                         -> t10
+                         -> t11
+                         -> t12
+                         -> t13
+                         -> p1
+                         -> p2
+                         -> p3
+                         -> t14
+                         -> t15
+                         -> p4
+                         -> t16)
+                        (p0
+                         -> t0
+                         -> t1
+                         -> t2
+                         -> t3
+                         -> t4
+                         -> t5
+                         -> t6
+                         -> t7
+                         -> t8
+                         -> t9
+                         -> t10
+                         -> t11
+                         -> t12
+                         -> t13
+                         -> p1
+                         -> p2
+                         -> p3
+                         -> t14
+                         -> t15
+                         -> p4
+                         -> t16))
+                     (p0
+                      -> t0
+                      -> t1
+                      -> t2
+                      -> t3
+                      -> t4
+                      -> t5
+                      -> t6
+                      -> t7
+                      -> t8
+                      -> t9
+                      -> t10
+                      -> t11
+                      -> t12
+                      -> t13
+                      -> p1
+                      -> p2
+                      -> p3
+                      -> t14
+                      -> t15
+                      -> p4
+                      -> t16))
+                  (p0
+                   -> t0
+                   -> t1
+                   -> t2
+                   -> t3
+                   -> t4
+                   -> t5
+                   -> t6
+                   -> t7
+                   -> t8
+                   -> t9
+                   -> t10
+                   -> t11
+                   -> t12
+                   -> t13
+                   -> p1
+                   -> p2
+                   -> p3
+                   -> t14
+                   -> t15
+                   -> p4
+                   -> t16)
+          (bound at Lemma_Sixteen.hs:217:41)
+    |
+225 |           Lemma_Sixteen_SR_wb.coq_Lemma_Sixteen_SR_wb n0 m x x0 x1 x2 x3 x4 x5 x6 x7 x8 x9     |                                                            ^
+
+Lemma_Sixteen.hs:230:60: error:
+    • Couldn't match type ‘GHC.Base.Any’
+                     with ‘p0
+                           -> t0
+                           -> t1
+                           -> t2
+                           -> t3
+                           -> t4
+                           -> t5
+                           -> t6
+                           -> t7
+                           -> t8
+                           -> t9
+                           -> t10
+                           -> t11
+                           -> t12
+                           -> t13
+                           -> p1
+                           -> p2
+                           -> p3
+                           -> t14
+                           -> t15
+                           -> p4
+                           -> t16’
+      Expected type: Datatypes.Coq_prod
+                       Datatypes.Coq_nat Datatypes.Coq_nat
+                     -> ()
+                     -> Datatypes.Coq_prod
+                          (Datatypes.Coq_prod
+                             (Datatypes.Coq_prod
+                                Lemma_Sixteen_setup.SR_wb Lemma_Sixteen_setup.SR_bb)
+                             Lemma_Sixteen_setup.SR_p)
+                          Lemma_Sixteen_setup.SL
+        Actual type: Datatypes.Coq_prod
+                       Datatypes.Coq_nat Datatypes.Coq_nat
+                     -> ()
+                     -> Datatypes.Coq_prod
+                          (Datatypes.Coq_prod
+                             (Datatypes.Coq_prod
+                                (p0
+                                 -> t0
+                                 -> t1
+                                 -> t2
+                                 -> t3
+                                 -> t4
+                                 -> t5
+                                 -> t6
+                                 -> t7
+                                 -> t8
+                                 -> t9
+                                 -> t10
+                                 -> t11
+                                 -> t12
+                                 -> t13
+                                 -> p1
+                                 -> p2
+                                 -> p3
+                                 -> t14
+                                 -> t15
+                                 -> p4
+                                 -> t16)
+                                (p0
+                                 -> t0
+                                 -> t1
+                                 -> t2
+                                 -> t3
+                                 -> t4
+                                 -> t5
+                                 -> t6
+                                 -> t7
+                                 -> t8
+                                 -> t9
+                                 -> t10
+                                 -> t11
+                                 -> t12
+                                 -> t13
+                                 -> p1
+                                 -> p2
+                                 -> p3
+                                 -> t14
+                                 -> t15
+                                 -> p4
+                                 -> t16))
+                             (p0
+                              -> t0
+                              -> t1
+                              -> t2
+                              -> t3
+                              -> t4
+                              -> t5
+                              -> t6
+                              -> t7
+                              -> t8
+                              -> t9
+                              -> t10
+                              -> t11
+                              -> t12
+                              -> t13
+                              -> p1
+                              -> p2
+                              -> p3
+
+                              -> t14
+                              -> t15
+                              -> p4
+                              -> t16))
+                          (p0
+                           -> t0
+                           -> t1
+                           -> t2
+                           -> t3
+                           -> t4
+                           -> t5
+                           -> t6
+                           -> t7
+                           -> t8
+                           -> t9
+                           -> t10
+                           -> t11
+                           -> t12
+                           -> t13
+                           -> p1
+                           -> p2
+                           -> p3
+                           -> t14
+                           -> t15
+                           -> p4
+                           -> t16)
+      The type variables ‘p0’, ‘t0’, ‘t1’, ‘t2’, ‘t3’, ‘t4’, ‘t5’, ‘t6’,
+                         ‘t7’, ‘t8’, ‘t9’, ‘t10’, ‘t11’, ‘t12’, ‘t13’, ‘p1’, ‘p2’, ‘p3’,
+                         ‘t14’, ‘t15’, ‘p4’, ‘t16’ are ambiguous
+    • In the third argument of ‘Lemma_Sixteen_SR_bb.coq_Lemma_Sixteen_SR_bb’, namely
+        ‘x’
+      In the expression:
+        Lemma_Sixteen_SR_bb.coq_Lemma_Sixteen_SR_bb
+          n0
+          m
+          x
+          x0
+          x1
+          x2
+          x3
+          x4
+          x5
+          x6
+          x7
+          x8
+          x9
+          x10
+          x11
+          x12
+          x13
+          x14
+          x15
+          x16
+          x17
+      In the expression:
+        \ x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15 x16 x17
+          -> Lemma_Sixteen_SR_bb.coq_Lemma_Sixteen_SR_bb
+               n0
+               m
+               x
+               x0
+               x1
+               x2
+               x3
+               x4
+               x5
+               x6
+               x7
+               x8
+               x9
+               x10
+               x11
+               x12
+               x13
+               x14
+               x15
+               x16
+               x17
+
+    • Relevant bindings include
+        x :: Datatypes.Coq_prod Datatypes.Coq_nat Datatypes.Coq_nat
+             -> ()
+             -> Datatypes.Coq_prod
+                  (Datatypes.Coq_prod
+                     (Datatypes.Coq_prod
+                        (p0
+                         -> t0
+                         -> t1
+                         -> t2
+                         -> t3
+                         -> t4
+                         -> t5
+                         -> t6
+                         -> t7
+                         -> t8
+                         -> t9
+                         -> t10
+                         -> t11
+                         -> t12
+                         -> t13
+                         -> p1
+                         -> p2
+                         -> p3
+                         -> t14
+                         -> t15
+                         -> p4
+                         -> t16)
+                        (p0
+                         -> t0
+                         -> t1
+                         -> t2
+                         -> t3
+                         -> t4
+                         -> t5
+                         -> t6
+                         -> t7
+                         -> t8
+                         -> t9
+                         -> t10
+                         -> t11
+                         -> t12
+                         -> t13
+                         -> p1
+                         -> p2
+                         -> p3
+                         -> t14
+                         -> t15
+                         -> p4
+                         -> t16))
+                     (p0
+                      -> t0
+                      -> t1
+                      -> t2
+                      -> t3
+                      -> t4
+                      -> t5
+                      -> t6
+                      -> t7
+                      -> t8
+                      -> t9
+                      -> t10
+                      -> t11
+                      -> t12
+                      -> t13
+                      -> p1
+                      -> p2
+                      -> p3
+                      -> t14
+                      -> t15
+                      -> p4
+                      -> t16))
+                  (p0
+                   -> t0
+                   -> t1
+                   -> t2
+                   -> t3
+                   -> t4
+                   -> t5
+                   -> t6
+                   -> t7
+                   -> t8
+                   -> t9
+                   -> t10
+                   -> t11
+                   -> t12
+                   -> t13
+                   -> p1
+                   -> p2
+                   -> p3
+                   -> t14
+                   -> t15
+                   -> p4
+                   -> t16)
+          (bound at Lemma_Sixteen.hs:217:41)
+    |
+230 |           Lemma_Sixteen_SR_bb.coq_Lemma_Sixteen_SR_bb n0 m x x0 x1 x2 x3 x4 x5 x6 x7 x8 x9     |                                                            ^
+
+Lemma_Sixteen.hs:240:13: error:
+    • Couldn't match type ‘GHC.Base.Any’
+                     with ‘p0
+                           -> t0
+                           -> t1
+                           -> t2
+                           -> t3
+                           -> t4
+                           -> t5
+                           -> t6
+                           -> t7
+                           -> t8
+                           -> t9
+                           -> t10
+                           -> t11
+                           -> t12
+                           -> t13
+                           -> p1
+                           -> p2
+                           -> p3
+                           -> t14
+                           -> t15
+                           -> p4
+                           -> t16’
+      Expected type: Datatypes.Coq_prod
+                       Datatypes.Coq_nat Datatypes.Coq_nat
+                     -> ()
+                     -> Datatypes.Coq_prod
+                          (Datatypes.Coq_prod
+                             (Datatypes.Coq_prod
+                                Lemma_Sixteen_setup.SR_wb Lemma_Sixteen_setup.SR_bb)
+                             Lemma_Sixteen_setup.SR_p)
+                          Lemma_Sixteen_setup.SL
+        Actual type: Datatypes.Coq_prod
+                       Datatypes.Coq_nat Datatypes.Coq_nat
+                     -> ()
+                     -> Datatypes.Coq_prod
+                          (Datatypes.Coq_prod
+                             (Datatypes.Coq_prod
+                                (p0
+                                 -> t0
+                                 -> t1
+                                 -> t2
+                                 -> t3
+                                 -> t4
+                                 -> t5
+                                 -> t6
+                                 -> t7
+                                 -> t8
+                                 -> t9
+                                 -> t10
+                                 -> t11
+                                 -> t12
+                                 -> t13
+                                 -> p1
+                                 -> p2
+                                 -> p3
+                                 -> t14
+                                 -> t15
+                                 -> p4
+                                 -> t16)
+                                (p0
+                                 -> t0
+                                 -> t1
+                                 -> t2
+                                 -> t3
+                                 -> t4
+                                 -> t5
+                                 -> t6
+                                 -> t7
+                                 -> t8
+                                 -> t9
+                                 -> t10
+                                 -> t11
+                                 -> t12
+                                 -> t13
+                                 -> p1
+                                 -> p2
+                                 -> p3
+                                 -> t14
+                                 -> t15
+                                 -> p4
+                                 -> t16))
+                             (p0
+                              -> t0
+                              -> t1
+                              -> t2
+                              -> t3
+                              -> t4
+                              -> t5
+                              -> t6
+                              -> t7
+                              -> t8
+                              -> t9
+                              -> t10
+                              -> t11
+                              -> t12
+                              -> t13
+                              -> p1
+                              -> p2
+                              -> p3
+                              -> t14
+                              -> t15
+                              -> p4
+                              -> t16))
+                          (p0
+                           -> t0
+                           -> t1
+                           -> t2
+                           -> t3
+                           -> t4
+                           -> t5
+                           -> t6
+                           -> t7
+                           -> t8
+                           -> t9
+                           -> t10
+                           -> t11
+                           -> t12
+                           -> t13
+                           -> p1
+                           -> p2
+                           -> p3
+                           -> t14
+                           -> t15
+                           -> p4
+                           -> t16)
+      The type variables ‘p0’, ‘t0’, ‘t1’, ‘t2’, ‘t3’, ‘t4’, ‘t5’, ‘t6’,
+                         ‘t7’, ‘t8’, ‘t9’, ‘t10’, ‘t11’, ‘t12’, ‘t13’, ‘p1’, ‘p2’, ‘p3’,
+                         ‘t14’, ‘t15’, ‘p4’, ‘t16’ are ambiguous
+    • In the fifth argument of ‘Lemma_Sixteen_SR_p.coq_Lemma_Sixteen_SR_p’, namely
+        ‘x’
+      In the expression:
+        Lemma_Sixteen_SR_p.coq_Lemma_Sixteen_SR_p
+          n0
+          m
+          (\ _
+             x15
+             x16
+             x17
+             x18
+             x19
+             x20
+             x21
+             x22
+             x23
+             x24
+             x25
+             x26
+             x27
+             x28
+             x29
+             x30
+             _
+             x31
+             x32
+             _
+             -> hSRwb
+                  x15
+                  x16
+                  x17
+                  x18
+                  x19
+                  x20
+                  x21
+                  x22
+                  x23
+                  x24
+                  x25
+                  x26
+                  x27
+                  x28
+                  x29
+                  x30
+                  x31
+                  x32)
+          (\ _
+             x15
+             x16
+             x17
+             x18
+             x19
+             x20
+             x21
+             x22
+             x23
+             x24
+             x25
+             x26
+             x27
+             x28
+             x29
+             x30
+             _
+             x31
+             x32
+             _
+             -> hSRbb
+                  x15
+                  x16
+                  x17
+                  x18
+                  x19
+                  x20
+                  x21
+                  x22
+                  x23
+                  x24
+                  x25
+                  x26
+                  x27
+                  x28
+                  x29
+                  x30
+                  x31
+                  x32)
+          x
+          x0
+          x1
+          x2
+          x3
+          x4
+          x5
+          x6
+          x7
+          x8
+          x9
+          x10
+          x11
+          x12
+          x13
+          x14
+      In the expression:
+        \ x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14
+          -> Lemma_Sixteen_SR_p.coq_Lemma_Sixteen_SR_p
+               n0
+               m
+               (\ _
+                  x15
+                  x16
+                  x17
+                  x18
+                  x19
+                  x20
+                  x21
+                  x22
+                  x23
+                  x24
+                  x25
+                  x26
+                  x27
+                  x28
+                  x29
+                  x30
+                  _
+                  x31
+                  x32
+                  _
+                  -> hSRwb
+                       x15
+                       x16
+                       x17
+                       x18
+                       x19
+                       x20
+
+                       x21
+                       x22
+                       x23
+                       x24
+                       x25
+                       x26
+                       x27
+                       x28
+                       x29
+                       x30
+                       x31
+                       x32)
+               (\ _
+                  x15
+                  x16
+                  x17
+                  x18
+                  x19
+                  x20
+                  x21
+                  x22
+                  x23
+                  x24
+                  x25
+                  x26
+                  x27
+                  x28
+                  x29
+                  x30
+                  _
+                  x31
+                  x32
+                  _
+                  -> hSRbb
+                       x15
+                       x16
+                       x17
+                       x18
+                       x19
+                       x20
+                       x21
+                       x22
+                       x23
+                       x24
+                       x25
+                       x26
+                       x27
+                       x28
+                       x29
+                       x30
+                       x31
+                       x32)
+               x
+               x0
+               x1
+               x2
+               x3
+               x4
+               x5
+               x6
+               x7
+               x8
+
+               x9
+               x10
+               x11
+               x12
+               x13
+               x14
+    • Relevant bindings include
+        x :: Datatypes.Coq_prod Datatypes.Coq_nat Datatypes.Coq_nat
+             -> ()
+             -> Datatypes.Coq_prod
+                  (Datatypes.Coq_prod
+                     (Datatypes.Coq_prod
+                        (p0
+                         -> t0
+                         -> t1
+                         -> t2
+                         -> t3
+                         -> t4
+                         -> t5
+                         -> t6
+                         -> t7
+                         -> t8
+                         -> t9
+                         -> t10
+                         -> t11
+                         -> t12
+                         -> t13
+                         -> p1
+                         -> p2
+                         -> p3
+                         -> t14
+                         -> t15
+                         -> p4
+                         -> t16)
+                        (p0
+                         -> t0
+                         -> t1
+                         -> t2
+                         -> t3
+                         -> t4
+                         -> t5
+                         -> t6
+                         -> t7
+                         -> t8
+                         -> t9
+                         -> t10
+                         -> t11
+                         -> t12
+                         -> t13
+                         -> p1
+                         -> p2
+                         -> p3
+                         -> t14
+                         -> t15
+                         -> p4
+                         -> t16))
+                     (p0
+                      -> t0
+                      -> t1
+                      -> t2
+                      -> t3
+                      -> t4
+                      -> t5
+                      -> t6
+                      -> t7
+                      -> t8
+                      -> t9
+                      -> t10
+                      -> t11
+                      -> t12
+                      -> t13
+                      -> p1
+                      -> p2
+                      -> p3
+                      -> t14
+                      -> t15
+                      -> p4
+                      -> t16))
+                  (p0
+                   -> t0
+                   -> t1
+                   -> t2
+                   -> t3
+                   -> t4
+                   -> t5
+                   -> t6
+                   -> t7
+                   -> t8
+                   -> t9
+                   -> t10
+                   -> t11
+                   -> t12
+                   -> t13
+                   -> p1
+                   -> p2
+                   -> p3
+                   -> t14
+                   -> t15
+
+                   -> p4
+                   -> t16)
+          (bound at Lemma_Sixteen.hs:217:41)
+    |
+240 |             x x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14}     |             ^
+
+Lemma_Sixteen.hs:250:79: error:
+    • Couldn't match type ‘GHC.Base.Any’
+                     with ‘p0
+                           -> t0
+                           -> t1
+                           -> t2
+                           -> t3
+                           -> t4
+                           -> t5
+
+                           -> t6
+                           -> t7
+                           -> t8
+                           -> t9
+                           -> t10
+                           -> t11
+                           -> t12
+                           -> t13
+                           -> p1
+                           -> p2
+                           -> p3
+                           -> t14
+                           -> t15
+                           -> p4
+                           -> t16’
+      Expected type: Datatypes.Coq_prod
+                       Datatypes.Coq_nat Datatypes.Coq_nat
+                     -> ()
+                     -> Datatypes.Coq_prod
+                          (Datatypes.Coq_prod
+                             (Datatypes.Coq_prod
+                                Lemma_Sixteen_setup.SR_wb Lemma_Sixteen_setup.SR_bb)
+                             Lemma_Sixteen_setup.SR_p)
+                          Lemma_Sixteen_setup.SL
+        Actual type: Datatypes.Coq_prod
+                       Datatypes.Coq_nat Datatypes.Coq_nat
+                     -> ()
+                     -> Datatypes.Coq_prod
+                          (Datatypes.Coq_prod
+                             (Datatypes.Coq_prod
+                                (p0
+                                 -> t0
+                                 -> t1
+                                 -> t2
+                                 -> t3
+                                 -> t4
+                                 -> t5
+                                 -> t6
+                                 -> t7
+                                 -> t8
+                                 -> t9
+                                 -> t10
+                                 -> t11
+                                 -> t12
+                                 -> t13
+                                 -> p1
+                                 -> p2
+                                 -> p3
+                                 -> t14
+                                 -> t15
+                                 -> p4
+                                 -> t16)
+                                (p0
+                                 -> t0
+                                 -> t1
+                                 -> t2
+                                 -> t3
+                                 -> t4
+                                 -> t5
+                                 -> t6
+                                 -> t7
+                                 -> t8
+                                 -> t9
+                                 -> t10
+                                 -> t11
+                                 -> t12
+                                 -> t13
+                                 -> p1
+                                 -> p2
+
+                                 -> p3
+                                 -> t14
+                                 -> t15
+                                 -> p4
+                                 -> t16))
+                             (p0
+                              -> t0
+                              -> t1
+                              -> t2
+                              -> t3
+                              -> t4
+                              -> t5
+                              -> t6
+                              -> t7
+                              -> t8
+                              -> t9
+                              -> t10
+                              -> t11
+                              -> t12
+                              -> t13
+                              -> p1
+                              -> p2
+                              -> p3
+                              -> t14
+                              -> t15
+                              -> p4
+                              -> t16))
+                          (p0
+                           -> t0
+                           -> t1
+                           -> t2
+                           -> t3
+                           -> t4
+                           -> t5
+                           -> t6
+                           -> t7
+                           -> t8
+                           -> t9
+                           -> t10
+                           -> t11
+                           -> t12
+                           -> t13
+
+                           -> p1
+                           -> p2
+                           -> p3
+                           -> t14
+                           -> t15
+                           -> p4
+                           -> t16)
+      The type variables ‘p0’, ‘t0’, ‘t1’, ‘t2’, ‘t3’, ‘t4’, ‘t5’, ‘t6’,
+                         ‘t7’, ‘t8’, ‘t9’, ‘t10’, ‘t11’, ‘t12’, ‘t13’, ‘p1’, ‘p2’, ‘p3’,
+                         ‘t14’, ‘t15’, ‘p4’, ‘t16’ are ambiguous
+    • In the sixth argument of ‘Lemma_Sixteen_SL.coq_Lemma_Sixteen_SL’, namely
+        ‘x’
+      In the expression:
+        Lemma_Sixteen_SL.coq_Lemma_Sixteen_SL
+          n0
+          m
+          (\ _
+             x14
+             x15
+             x16
+             x17
+             x18
+             x19
+             x20
+             x21
+             x22
+             x23
+             x24
+             x25
+             x26
+             x27
+             x28
+             x29
+             _
+             x30
+             x31
+             _
+             -> hSRwb
+                  x14
+                  x15
+                  x16
+                  x17
+
+                  x18
+                  x19
+                  x20
+                  x21
+                  x22
+                  x23
+                  x24
+                  x25
+                  x26
+                  x27
+                  x28
+                  x29
+                  x30
+                  x31)
+          (\ _
+             x14
+             x15
+             x16
+             x17
+             x18
+             x19
+             x20
+             x21
+             x22
+             x23
+             x24
+             x25
+             x26
+             x27
+             x28
+             x29
+             _
+             x30
+             x31
+             _
+             -> hSRbb
+                  x14
+                  x15
+                  x16
+                  x17
+                  x18
+                  x19
+                  x20
+                  x21
+                  x22
+                  x23
+                  x24
+                  x25
+                  x26
+                  x27
+                  x28
+                  x29
+                  x30
+                  x31)
+          (\ _
+             x14
+             x15
+             x16
+             x17
+             x18
+             x19
+             x20
+             x21
+             x22
+             x23
+             x24
+             x25
+             x26
+             x27
+             x28
+             _
+             _
+             -> hSRp
+                  x14 x15 x16 x17 x18 x19 x20 x21 x22 x23 x24 x25 x26 x27 x28)
+          x
+          x0
+          x1
+          x2
+          x3
+          x4
+          x5
+          x6
+
+          x7
+          x8
+          x9
+          x10
+          x11
+          x12
+          x13
+      In the expression:
+
+        \ x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13
+          -> Lemma_Sixteen_SL.coq_Lemma_Sixteen_SL
+               n0
+
+               m
+               (\ _
+                  x14
+                  x15
+                  x16
+                  x17
+                  x18
+                  x19
+                  x20
+                  x21
+                  x22
+                  x23
+                  x24
+                  x25
+                  x26
+                  x27
+                  x28
+
+                  x29
+                  _
+                  x30
+                  x31
+                  _
+                  -> hSRwb
+                       x14
+                       x15
+                       x16
+                       x17
+                       x18
+                       x19
+                       x20
+                       x21
+                       x22
+                       x23
+                       x24
+                       x25
+                       x26
+                       x27
+                       x28
+                       x29
+                       x30
+                       x31)
+               (\ _
+                  x14
+                  x15
+                  x16
+                  x17
+                  x18
+                  x19
+                  x20
+                  x21
+                  x22
+                  x23
+                  x24
+                  x25
+                  x26
+                  x27
+                  x28
+                  x29
+                  _
+                  x30
+                  x31
+                  _
+                  -> hSRbb
+                       x14
+                       x15
+                       x16
+                       x17
+                       x18
+                       x19
+                       x20
+                       x21
+                       x22
+                       x23
+                       x24
+                       x25
+                       x26
+                       x27
+                       x28
+                       x29
+                       x30
+                       x31)
+               (\ _
+                  x14
+                  x15
+                  x16
+                  x17
+                  x18
+                  x19
+                  x20
+                  x21
+                  x22
+                  x23
+                  x24
+                  x25
+                  x26
+                  x27
+                  x28
+                  _
+                  _
+                  -> hSRp
+                       x14 x15 x16 x17 x18 x19 x20 x21 x22 x23 x24 x25 x26 x27 x28)
+               x
+               x0
+               x1
+               x2
+               x3
+               x4
+               x5
+               x6
+               x7
+               x8
+               x9
+               x10
+               x11
+               x12
+               x13
+    • Relevant bindings include
+        x :: Datatypes.Coq_prod Datatypes.Coq_nat Datatypes.Coq_nat
+             -> ()
+             -> Datatypes.Coq_prod
+                  (Datatypes.Coq_prod
+                     (Datatypes.Coq_prod
+                        (p0
+                         -> t0
+                         -> t1
+                         -> t2
+                         -> t3
+                         -> t4
+                         -> t5
+                         -> t6
+                         -> t7
+                         -> t8
+                         -> t9
+                         -> t10
+                         -> t11
+                         -> t12
+                         -> t13
+                         -> p1
+                         -> p2
+                         -> p3
+                         -> t14
+                         -> t15
+                         -> p4
+                         -> t16)
+                        (p0
+                         -> t0
+                         -> t1
+                         -> t2
+                         -> t3
+                         -> t4
+                         -> t5
+                         -> t6
+                         -> t7
+                         -> t8
+                         -> t9
+                         -> t10
+                         -> t11
+                         -> t12
+                         -> t13
+                         -> p1
+                         -> p2
+                         -> p3
+                         -> t14
+                         -> t15
+                         -> p4
+                         -> t16))
+                     (p0
+                      -> t0
+                      -> t1
+                      -> t2
+                      -> t3
+                      -> t4
+                      -> t5
+                      -> t6
+                      -> t7
+                      -> t8
+                      -> t9
+                      -> t10
+                      -> t11
+                      -> t12
+                      -> t13
+                      -> p1
+                      -> p2
+                      -> p3
+                      -> t14
+                      -> t15
+                      -> p4
+                      -> t16))
+                  (p0
+                   -> t0
+                   -> t1
+                   -> t2
+                   -> t3
+                   -> t4
+                   -> t5
+                   -> t6
+                   -> t7
+                   -> t8
+                   -> t9
+                   -> t10
+                   -> t11
+                   -> t12
+                   -> t13
+                   -> p1
+                   -> p2
+                   -> p3
+                   -> t14
+                   -> t15
+                   -> p4
+                   -> t16)
+          (bound at Lemma_Sixteen.hs:217:41)
+    |
+250 |             hSRp x14 x15 x16 x17 x18 x19 x20 x21 x22 x23 x24 x25 x26 x27 x28) x x0 x1 x2     |                                                                               ^
+Failed, 47 modules loaded.
+*Ind_lex> 

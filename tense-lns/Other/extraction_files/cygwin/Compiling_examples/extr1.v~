@@ -1,0 +1,16 @@
+(*
+Add LoadPath "../../../../general".
+Add LoadPath "../../..".
+*)
+Add LoadPath "../../..".
+
+
+Require Import mwe_attempt1.
+Require Import Extraction.
+
+Extraction Language Haskell.
+(*
+Require Import ExtrHaskellBasic.
+Require Import ExtrHaskellNatInt.
+*)
+Time Separate Extraction lem_ex1.

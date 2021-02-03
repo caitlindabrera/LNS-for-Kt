@@ -1,0 +1,85 @@
+==============
+EXTRACTION LOG
+==============
+
+
+--------------------------------------
+Time Separate Extraction cut_example3.
+--------------------------------------
+
+Times WITHOUT ExtrHaskellBasic, ExtrHaskellNatInt; WITH Unset Extraction Optimize.
+51s
+34s
+33s
+74s
+32s
+
+Loaded with no issues
+181s
+176s
+
+cut_example4 run
+10s
+
+
+
+------
+
+Times WITHOUT ExtrHaskellBasic, ExtrHaskellNatInt, Unset Extraction Optimize.
+76s
+101s
+((Not sure about these times
+  55s
+  53s
+  52s))
+73s
+
+Issue loading Lemma_Sixteen.hs
+223s
+202s
+
+------
+
+Times WITH ExtrHaskellBasic, ExtrHaskellNatInt, Unset Extraction Optimize.
+42s
+42s
+
+
+Loaded with no issues
+183s
+180s
+
+cut_example3 run
+10s
+11s
+
+------
+
+(( Not sure what this was for:
+No issues
+191s
+1037s
+))
+(Not sure why one had issues and the other didn't...)
+
+
+
+
+
+-----------------------------------------------
+Time Separate Extraction LNSKt_cut_elimination. 
+-----------------------------------------------
+
+Times WITHOUT ExtrHaskellBasic, ExtrHaskellNatInt; WITH Unset Extraction Optimize.
+31s
+32s
+33s
+
+Times WITHOUT ExtrHaskellBasic, ExtrHaskellNatInt, Unset Extraction Optimize.
+37s
+34s
+36s
+
+No issue loading.
+245s
+
