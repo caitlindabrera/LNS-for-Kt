@@ -18,7 +18,7 @@ To run a pre-loaded extracted example:
 
 2. Load Main_example.hs.
 
-3. Run "cut_example4" or its definition "coq_LNSKt_cut_elimination concl4_0 example4" to produce a cut-free version of example4.
+3. Run "cut_example3" or its definition "coq_LNSKt_cut_elimination concl3_0 example3" to produce a cut-free version of example3.
 
 
 
