@@ -13,3 +13,5 @@ The tense-lns directory contains encodings of LNS for tense logic and its relate
 ----
 
 To use, see tense-lns/README.txt.
+
+Tested on Coq 8.10.2 (November, 2019)
