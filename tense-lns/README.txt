@@ -14,7 +14,7 @@ Instructions for producing and using the extracted Haskell cut-elimination proce
 To run a pre-loaded extracted example:
 --------------------------------------
 
-1. Run "cut_ex" in shell which compiles all required .v files, including cut_extraction_example.v that extracts the cut-elimination function and an example to run it on.
+1. Run "make cut_ex" in shell which compiles all required .v files, including cut_extraction_example.v that extracts the cut-elimination function and an example to run it on.
 
 2. Load Main_example.hs.
 
@@ -27,7 +27,7 @@ To run your own extracted example:
 
 0. In cut_extraction_example_pre.v, write up your own example following the same kind of framework as the other example/s. In cut_extraction_example.v, change the Extraction object from "cut_example4" to the name of your own example.
 
-1. Run "cut_ex" in shell which compiles all required .v files, including cut_extraction_example.v that extracts the cut-elimination function and your example.
+1. Run "make cut_ex" in shell which compiles all required .v files, including cut_extraction_example.v that extracts the cut-elimination function and your example.
 
 2. Load Main_example.hs.
 
@@ -38,7 +38,7 @@ To run your own extracted example:
 To extract the cut-elimination function without an example:
 -----------------------------------------------------------
 
-1. Run "cut_thm" in shell which compiles all required .v files, including cut_extraction_theorem.v that extracts the cut-elimination function.
+1. Run "make cut_thm" in shell which compiles all required .v files, including cut_extraction_theorem.v that extracts the cut-elimination function.
 
 2. Load Main_thm.hs.
 
